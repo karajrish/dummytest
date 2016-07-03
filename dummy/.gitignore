@@ -1,0 +1,30 @@
+# Directories #
+target/
+
+# Mac #
+.DS_Store
+
+# Windows #
+Thumbs.db
+
+# Folder config #
+Desktop.ini
+
+# Eclipse #
+.project
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+
+# IDEA #
+.idea/
+*.iml
+*.iws

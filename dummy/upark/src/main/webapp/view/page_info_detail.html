@@ -1,0 +1,23 @@
+<div class="container">
+	<!-- top navbar -->
+	<div ng-include="'view/fragment/navbar.html'" ></div>
+	<!-- sign in modal  diagram-->
+	<div ng-include="'view/fragment/modal_sign_in.html'"></div>
+	<!-- register modal  diagram-->
+	<div ng-include="'view/fragment/modal_register.html'"></div>
+	
+	<!-- header  -->
+		<div ng-include="'view/fragment/header.html'" ></div>
+		<div class="row">
+			<!-- sidebar  -->
+	    	<div id="sidebar" ng-include="'view/fragment/sidebar.html'"></div>
+	    	<!-- content  -->
+	    	<div id="content" ng-include="'view/fragment/info_detail.html'" ></div>
+	 	 </div>
+	<!-- footer  -->
+	<div ng-include="'view/fragment/footer.html'"></div>   
+</div>
+<!--right sliding page  -->
+<div ng-include="'view/fragment/sliding_page_news.html'" ></div>
+<div ng-include="'view/fragment/sliding_page_tips.html'" ></div>
+<div ng-include="'view/fragment/sliding_page_gift_card.html'" ></div>

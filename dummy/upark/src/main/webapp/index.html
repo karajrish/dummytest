@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="UPark">
+<head>
+	<meta charset="utf-8" />
+	<title>UPark</title>
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	
+	<!-- Framework Script -->
+
+	<script src="js/framework/jquery-1.11.1.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.5/angular.min.js"></script>
+	<script src="js/framework/angular-route.js"></script>
+	<script src="js/framework/angular-resource.js"></script>
+	<script src="js/framework/ui-bootstrap-tpls-0.12.0.js"></script>
+	
+	<script src="http://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js&v=3.14"></script>
+	<script src='js/framework/lodash.underscore.min.js'></script>
+	<script src="js/framework/angular-google-maps.js"></script>
+	
+
+	<!-- Customized Script -->
+	<script src="js/module/app_module.js"></script>
+	<script src="js/controller/map_ctrl.js"></script>
+	<script src="js/controller/top_nav_ctrl.js"></script>
+	<script src="js/controller/modal_sign_in_ctrl.js"></script>
+	<script src="js/controller/account_detail_ctrl.js"></script>
+	<script src="js/controller/modal_register_ctrl.js"></script>
+	<script src="js/controller/header_ctrl.js"></script>
+	<script src="js/controller/post_info_ctrl.js"></script>
+	<script src="js/controller/post_secceed_ctrl.js"></script>
+	<script src="js/controller/list_view_ctrl.js"></script>
+	<script src="js/controller/review_info_ctrl.js"></script>
+	
+</head>
+<body >
+	<div ng-view></div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+web:    java $JAVA_OPTS -jar target/dependency/webapp-runner.jar --port $PORT target/*.war
+
+
+
+'mysql://b673f77ed6c585:6ba7385a@us-cdbr-iron-east-01.cleardb.net/heroku_1e7966c767a4142?reconnect=true'
+
+
+heroku config:set DATABASE_URL='mysql://b673f77ed6c585:6ba7385a@us-cdbr-iron-east-01.cleardb.net/heroku_1e7966c767a4142?reconnect=true'

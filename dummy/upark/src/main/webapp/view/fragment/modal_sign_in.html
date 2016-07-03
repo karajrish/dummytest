@@ -1,0 +1,38 @@
+<!-- sign in modal  diagram-->
+<div class="modal fade" id="modal-sign-in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"  ng-controller="modalSignInCtrl">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times</button>
+			</div>
+	   		<form name="signIn" class="form-horizontal modal-body" role="form" novalidate>
+				<div class="form-group ">
+					<label for="username" class="col-md-3 control-label">E-mail</label>
+			  		<div class="col-md-8">
+			     		<input ng-model="input_username" name='username' type="email" class="form-control"  placeholder="please input your username" required>
+			  		</div>
+				</div>
+				<div class="form-group">
+			  		<label for="password" class="col-md-3 control-label" >Password</label>
+			  		<div class="col-md-8">
+			     		<input ng-model="input_password" name="password" type="password" class="form-control" placeholder="please input your password" required>
+			  		</div>
+				</div>
+				
+				<div class='error-message' style="color:red" ng-show="signIn.username.$dirty && signIn.username.$invalid||  signIn.password.$dirty && signIn.password.$invalid">
+					<span ng-show="signIn.username.$error.required">Username is required.</span>
+					<span ng-show="signIn.password.$error.required&&signIn.username.$valid">Passowrd is required.</span>
+					
+				</div>
+				<div class='error-message' style="color:red" ng-show="signIn.$valid" >
+					<span>{{invalid_account}}</span>
+				</div>
+							 
+			</form>
+		    <div class="modal-footer">
+		        <button ng-click="logIn()" type="submit" ng-disabled="signIn.$invalid" class="btn btn-success pull-left">Log in</button>
+		        <span class="pull-left">No Account? <a href="" ng-click="register()" >register one</a></span>
+		    </div>
+	  </div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
